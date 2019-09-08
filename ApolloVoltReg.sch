@@ -4352,17 +4352,17 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LM324" prefix="IC">
+<deviceset name="TL084" prefix="IC">
 <description>&lt;b&gt;OP AMP&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="OPAMP" x="15.24" y="10.16" swaplevel="1"/>
-<gate name="B" symbol="OPAMP" x="43.18" y="10.16" swaplevel="1"/>
+<gate name="B" symbol="OPAMP" x="50.8" y="10.16" swaplevel="1"/>
 <gate name="C" symbol="OPAMP" x="15.24" y="-10.16" swaplevel="1"/>
-<gate name="D" symbol="OPAMP" x="43.18" y="-7.62" swaplevel="1"/>
+<gate name="D" symbol="OPAMP" x="50.8" y="-10.16" swaplevel="1"/>
 <gate name="P" symbol="PWR+-" x="15.24" y="10.16" addlevel="request"/>
 </gates>
 <devices>
-<device name="N" package="DIL14">
+<device name="P" package="DIL14">
 <connects>
 <connect gate="A" pin="+IN" pad="3"/>
 <connect gate="A" pin="-IN" pad="2"/>
@@ -7943,7 +7943,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="U1" library="Texas Instruments - PTH04070WAD" deviceset="TEXAS_INSTRUMENTS_PTH04070WAD" device="TEXAS_INSTRUMENTS_PTH04070WAD_0_0"/>
 <part name="R4" library="resistor" deviceset="R-EU_" device="R0603" value="470"/>
-<part name="IC2" library="linear" deviceset="LM324" device="D" value="LM324D"/>
+<part name="IC2" library="linear" deviceset="TL084" device="D" value="TL084D"/>
 <part name="D1" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
 <part name="T1" library="transistor" deviceset="*-NPN-" device="SOT23-EBC"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
